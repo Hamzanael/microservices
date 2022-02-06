@@ -1,0 +1,15 @@
+server:
+  port: 8089
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://root:root@localhost:27016/
+      database: fraudDB
+  application:
+    name: Fraud
+eureka:
+  client:
+    service-url:
+      defualt-zone: http://localhost:8761/eureka
+
